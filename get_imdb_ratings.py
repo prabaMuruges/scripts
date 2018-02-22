@@ -40,7 +40,7 @@ movie_links = get_soup(search_url).find_all("a", href=re.compile("title"), text=
 suggested_movies_count = len(movie_links)
 
 if(suggested_movies_count > 1):
-  print("We have got TOP suggestions based on your input. Please enter your Movie's option. \n\nP.SIf you can't find the movie we are really sorry about that, type 'Exit' in that case.\n")
+  print("We have got TOP suggestions based on your input. Please enter your Movie's option. \n\nP.S If you can't find the movie we are really sorry about that, type 'Exit' in that case.\n")
   selection = 0
   op_text = ""
   for index, movie_link in enumerate(movie_links):
